@@ -1,1 +1,1 @@
-# Zybo-Z7-20-Video-Processing-Platform
+# Zybo Z7-20 Video Processing Platform
