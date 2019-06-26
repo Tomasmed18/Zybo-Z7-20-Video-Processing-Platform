@@ -1,0 +1,219 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar  1 15:26:41 2019
+# Process ID: 6780
+# Current directory: C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13232
+# Log file: C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+INFO: [Common 17-1463] Init.tcl in C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado/init.tcl is not used. Vivado_init.tcl is already sourced.
+start_gui
+open_project C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'system_auto_pc_2_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_auto_pc_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_auto_pc_1_synth_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/Zybo-Z7-20-pcam-5c/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1035.270 ; gain = 326.730
+update_compile_order -fileset sources_1
+open_bd_design {C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/system.bd}
+Adding cell -- digilentinc.com:user:AXI_BayerToRGB:1.0 - AXI_BayerToRGB_1
+Adding cell -- digilentinc.com:user:AXI_GammaCorrection:1.0 - AXI_GammaCorrection_0
+Adding cell -- xilinx.com:module_ref:DVIClocking:1.0 - DVIClocking_0
+Adding cell -- digilentinc.com:ip:MIPI_D_PHY_RX:1.3 - MIPI_D_PHY_RX_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_50M
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_vid_clk_dyn
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - video_dynclk
+Adding cell -- xilinx.com:ip:v_tc:6.1 - vtg
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- digilentinc.com:ip:MIPI_CSI_2_RX:1.1 - MIPI_CSI_2_RX_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /DVIClocking_0/SerialClk(undef) and /rgb2dvi_0/SerialClk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /DVIClocking_0/PixelClk(undef) and /rgb2dvi_0/PixelClk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /DVIClocking_0/PixelClk(undef) and /rst_vid_clk_dyn/slowest_sync_clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /DVIClocking_0/PixelClk(undef) and /v_axi4s_vid_out_0/vid_io_out_clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /DVIClocking_0/PixelClk(undef) and /vtg/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_dynclk/pxl_clk_5x(clk) and /DVIClocking_0/PixelClk5X(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /v_axi4s_vid_out_0/locked(undef) and /rgb2dvi_0/aRst_n(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.402 ; gain = 37.133
+report_ip_status -name ip_status 
+launch_runs impl_1 -jobs 2
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd
+VHDL Output written to : C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_BayerToRGB_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_GammaCorrection_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DVIClocking_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MIPI_CSI_2_RX_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MIPI_D_PHY_RX_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_vid_clk_dyn .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_dynclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vtg .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_auto_pc_2, cache-ID = 7b03c0ae332792b2.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = 9f0bec12bf37ba11.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 5d6130e64d3f7fc9.
+[Fri Mar  1 15:29:56 2019] Launched system_MIPI_CSI_2_RX_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_MIPI_CSI_2_RX_0_0_synth_1: C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.runs/system_MIPI_CSI_2_RX_0_0_synth_1/runme.log
+synth_1: C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.runs/synth_1/runme.log
+[Fri Mar  1 15:29:56 2019] Launched impl_1...
+Run output will be captured here: C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:55 ; elapsed = 00:01:52 . Memory (MB): peak = 1411.074 ; gain = 328.523
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2709 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2501.469 ; gain = 22.598
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2501.469 ; gain = 22.598
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 913 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 888 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 21 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:56 ; elapsed = 00:00:50 . Memory (MB): peak = 2571.977 ; gain = 1130.770
+open_report: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2827.418 ; gain = 223.449
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Mar  1 15:52:47 2019] Launched impl_1...
+Run output will be captured here: C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.runs/impl_1/runme.log
+file mkdir C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.sdk
+file copy -force C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.runs/impl_1/system_wrapper.sysdef C:/git/Zybo-Z7-20-pcam-5c/hw_handoff/system_wrapper.hdf
+
+launch_sdk -workspace C:/git/Zybo-Z7-20-pcam-5c/sdk -hwspec C:/git/Zybo-Z7-20-pcam-5c/hw_handoff/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/git/Zybo-Z7-20-pcam-5c/sdk -hwspec C:/git/Zybo-Z7-20-pcam-5c/hw_handoff/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/git/Zybo-Z7-20-pcam-5c/proj/Zybo-Z7-20-pcam-5c.runs/impl_1/system_wrapper.sysdef C:/git/Zybo-Z7-20-pcam-5c/hw_handoff/system_wrapper.hdf
+
+archive_project C:/git/Zybo-Z7-20-pcam-5c/release/vivado_proj.xpr.zip -temp_dir C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6780-elodlt-ro -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6780-elodlt-ro' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/Zybo-Z7-20-pcam-5c/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/rogyorge/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6780-elodlt-ro/PrjAr/_X_'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/Zybo-Z7-20-pcam-5c/repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/Zybo-Z7-20-pcam-5c/repo'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_AXI_BayerToRGB_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_AXI_GammaCorrection_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_DVIClocking_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_vdma_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_clk_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_processing_system7_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rgb2dvi_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rst_clk_wiz_0_50M_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_MIPI_D_PHY_RX_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_xlconcat_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_v_axi4s_vid_out_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_video_dynclk_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rst_vid_clk_dyn_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_xbar_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_vtg_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_MIPI_CSI_2_RX_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'system_AXI_BayerToRGB_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_AXI_GammaCorrection_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_DVIClocking_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_vdma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rgb2dvi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rst_clk_wiz_0_50M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_MIPI_D_PHY_RX_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_xlconcat_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_v_axi4s_vid_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_video_dynclk_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rst_vid_clk_dyn_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_vtg_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_MIPI_CSI_2_RX_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_AXI_BayerToRGB_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_AXI_BayerToRGB_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_AXI_GammaCorrection_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_AXI_GammaCorrection_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_DVIClocking_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_DVIClocking_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_MIPI_CSI_2_RX_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_MIPI_CSI_2_RX_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_MIPI_D_PHY_RX_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_MIPI_D_PHY_RX_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_vdma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_vdma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rgb2dvi_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rgb2dvi_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rst_clk_wiz_0_50M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rst_clk_wiz_0_50M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rst_vid_clk_dyn_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rst_vid_clk_dyn_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_video_dynclk_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_video_dynclk_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_vtg_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_vtg_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_xlconcat_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_xlconcat_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
