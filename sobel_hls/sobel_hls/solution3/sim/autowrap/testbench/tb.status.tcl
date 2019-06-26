@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName sobel_hls.cpp_pre.cpp.tb.cpp

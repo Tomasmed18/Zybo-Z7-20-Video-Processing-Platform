@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel_hls.hpp" path="C:\xilinx_projects\sobel_hls\sobel_hls.hpp"/>
+    <originFiles name="sobel_hls.cpp" path="C:\xilinx_projects\sobel_hls\sobel_hls.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.bmp" path="C:\xilinx_projects\sobel_hls\test.bmp"/>
+    <originFiles name="sobel_hls_test.cpp" path="C:\xilinx_projects\sobel_hls\sobel_hls_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
